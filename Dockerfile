@@ -7,9 +7,9 @@ WORKDIR /
 RUN mkdir /GRPC
 WORKDIR /GRPC
 # Change the hostnames
-RUN wget htttp:///XXXXv0.2.96.tar.gz --no-check-certificate
+RUN wget htttp:///XXXXHOST.COM/protosdirectory.tar.gz --no-check-certificate
 RUN tar -xvf v0.2.96.tar.gz
-RUN mv /GRPC/models-0.2.96/protos /protos
+RUN mv /GRPC/protosdirectory /protos
 WORKDIR /protos
 COPY tools/* //usr/local/bin/
 EXPOSE 4771 4770 
