@@ -8,9 +8,10 @@ You can use gripmock for setting up end-to-end testing or as a dummy server in a
 The server implementation is in GoLang but the client can be any programming language that support gRPC.
 ```
 
-There is minor limitation to this https://github.com/tokopedia/gripmock where we need to specify the proto file while running docker
+There is a minor limitation to this https://github.com/tokopedia/gripmock where we need to specify the proto file while running docker
 
 Ex: docker run -p 4770:4770 -p 4771:4771 -v /mypath:/proto tkpd/gripmock /proto/hello.proto
+
 
 Unless we specify **/proto/hello.proto** gripmock server wont run.
 
